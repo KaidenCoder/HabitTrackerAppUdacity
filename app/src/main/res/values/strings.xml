@@ -1,0 +1,30 @@
+<resources>
+
+    <!--String names for activity_editor.xml-->
+    <string name="app_name">Habit Tracker App</string>
+    <string name="overview">Overview</string>
+    <string name="name_puzzle">Puzzle Name</string>
+    <string name="name_author">Author Name</string>
+    <string name="gender">Gender</string>
+    <string name="time_taken">Time taken</string>
+    <string name="time_solve">Time taken to solve</string>
+    <string name="minutes">mins</string>
+
+    <!--String names for menu_editor.xml-->
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+
+    <!-- String names for menu_habit.xml-->
+    <string name="puzzle_insert">Insert puzzle data</string>
+    <string name="delete_puzzles">Delete all puzzles</string>
+
+    <!-- Label for dropdown menu option if the pet's gender is unknown [CHAR LIMIT=20] -->
+    <string name="gender_unknown">Unknown</string>
+
+    <!-- Label for dropdown menu option if the pet is male [CHAR LIMIT=20] -->
+    <string name="gender_male">Male</string>
+
+    <!-- Label for dropdown menu option if the pet is female [CHAR LIMIT=20] -->
+    <string name="gender_female">Female</string>
+
+</resources>

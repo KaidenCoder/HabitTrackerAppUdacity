@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--* This project is done by Khaidem Sandip Singha under the Udacity Android Foundations Nanodegree program.
+    *
+    * I confirm that this submission is my own work. I have not used code from any other Udacity student's or graduate's submission of the same project.
+    * I understand that Udacity will check my submission for plagiarism, and that failure to adhere to the Udacity Honor Code may result in the cancellation of my
+    * enrollment.
+    *-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HabitActivity">
+
+    <TextView
+        android:id="@+id/text_view_puzzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello World!"
+        android:padding="@dimen/padding"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/add"
+        android:layout_margin="@dimen/padding"
+
+        />
+
+</RelativeLayout>

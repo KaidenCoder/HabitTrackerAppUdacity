@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--* This project is done by Khaidem Sandip Singha under the Udacity Android Foundations Nanodegree program.
+    *
+    * I confirm that this submission is my own work. I have not used code from any other Udacity student's or graduate's submission of the same project.
+    * I understand that Udacity will check my submission for plagiarism, and that failure to adhere to the Udacity Honor Code may result in the cancellation of my
+    * enrollment.
+    *-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    tools:context=".EditorActivity">
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/overview"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/padding_zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/padding_six"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_puzzle_name"
+                android:hint="@string/name_puzzle"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <EditText
+                android:id = "@+id/edit_author_name"
+                android:hint = "@string/name_author"
+                style="@style/EditorFieldStyle" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/gender"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/padding_zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+
+            <Spinner
+                android:id="@+id/spinner_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/padding_big"
+                android:paddingRight="@dimen/padding"
+                android:spinnerMode="dropdown"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/time_taken"
+            style="@style/CategoryStyle" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/padding_zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/padding_six">
+
+            <EditText
+                android:id="@+id/edit_time_taken"
+                android:hint="@string/time_solve"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+            <TextView
+                android:id="@+id/time_minutes"
+                android:text="@string/minutes"
+                style="@style/EditorUnitsStyle"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
